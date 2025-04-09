@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Quản lý người dùng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard-layout.css">
+  </head>
+
+  <body>
+
+    <div class="sidebar">
+      <h2>📝 Trello</h2>
+      <p>YOUR DASHBOARD</p>
+      <ul>
+        <li><a href="dashboard-layout.html">📊 User dashboard</a></li>
+        <li><a href="addUser-layout.html">➕ Add new user</a></li>
+        <li><a href="#">🔚 Sign out</a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="header">
+        <h2>📋 User Management</h2>
+        <hr>
+        <input type="text" id="searchBox" class="search-box" placeholder="Search user by name..."
+          onkeyup="searchUser()">
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>User code</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Birthday</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="userTable"></tbody>
+        </table>
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </div>
+
+    <script src="./js/dashboard-layout.js">
+
+    </script>
+  </body>
+
+</html>
