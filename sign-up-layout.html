@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng kí</title>
+     
+        <link rel="stylesheet" href="./css/sign-up-layout.css">
+    
+
+    </head>
+
+    <body>
+
+        <!-- Thông báo lỗi với icon ❌ -->
+        <div id="error-message" class="message">
+            <img src="./assets/icon-error.webp" alt="Error" class="icon"> Error<br />
+            <p id="error-text"></p>
+            <button id="close-error" onclick="closeError()">x</button>
+        </div>
+
+        <!-- Thông báo thành công với icon ✅ -->
+        <div id="success" class="message">
+            <img src="https://cdn-icons-png.flaticon.com/512/845/845646.png" alt="Success" class="icon">
+            Đăng ký thành công!
+        </div>
+
+
+        <div class="login-container">
+            <h2>Trello</h2>
+            <p>Please sign up</p><br>
+
+            <form id="registerForm" onsubmit="validateForm(event)">
+                <input type="text" id="inputEmail" placeholder="Email address">
+                <input type="text" id="inputUsername" placeholder="Username">
+                <input type="password" id="inputPassword" placeholder="Password"><br><br>
+
+                
+                <p>Already have an account, <a href="#" id="showSignIn" >click here!</a></p><br>
+
+                <button id="btn" type="submit">Sign up</button><br><br>
+                <p>&copy; 2025- Rikkei Education</p>
+            </form>
+        </div>
+
+
+        <script src="./js/sign-up-layout.js"></script>
+        
+
+    </body>
+
+</html>
