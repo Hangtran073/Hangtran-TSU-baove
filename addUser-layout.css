@@ -1,0 +1,146 @@
+/* Reset và font mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    background-color: #f4f6f8;
+  }
+
+  /* Sidebar trái */
+  .sidebar {
+    width: 220px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    min-height: 100vh;
+  }
+
+  .sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #2c3e50;
+  }
+
+  .sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #2c3e50;
+    margin: 15px 0;
+    font-size: 15px;
+  }
+
+  /* Khu vực nội dung chính */
+  .main-content {
+    flex: 1;
+    padding: 20px 40px;
+  }
+
+  /* Tiêu đề trang */
+  .page-header {
+    margin-bottom: 20px;
+  }
+
+  .page-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  .page-header span {
+    color: #888;
+  }
+
+  /* Khối chứa form add user */
+  .form-container {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  .form-container h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+
+  /* Dùng grid để xếp các ô nhập liệu 2 cột */
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+  }
+
+  /* Cho một số ô có thể chiếm cả hàng */
+  .form-row-full {
+    grid-column: 1 / 3;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #555;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  /* Radio status */
+  .status-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 8px;
+  }
+
+  .status-options label {
+    font-weight: normal;
+    margin: 0;
+  }
+
+  /* Nút hành động */
+  .form-actions {
+    margin-top: 25px;
+    text-align: right;
+  }
+
+  .form-actions button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .btn-back {
+    background-color: #bdc3c7;
+    color: #333;
+  }
+
+  .btn-add {
+    background-color: #3498db;
+    color: #fff;
+  }
+
+  .btn-back:hover {
+    background-color: #a8b0b3;
+  }
+
+  .btn-add:hover {
+    background-color: #2980b9;
+  }
